@@ -1014,3 +1014,95 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* Courses Section */
+.courses {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.courses .section_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.download_links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer_link {
+  font-size: 1rem;
+  color: #6e57e0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer_link:hover {
+  color: #4a40b1;
+}
+
+.courses .section_subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.courses_container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  padding: 0 20px;
+}
+
+.course_card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.course_title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course_description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.course_fee {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.course_button, .payment_button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #6e57e0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.course_button:hover, .payment_button:hover {
+  background-color: #4a40b1;
+}
+
