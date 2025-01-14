@@ -1105,4 +1105,71 @@ button {
 .course_button:hover, .payment_button:hover {
   background-color: #4a40b1;
 }
+/* Light Theme (Default) */
+.courses .section_title,
+.courses .section_subtitle {
+    color: #000;
+}
 
+.course_card {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.course_card:hover {
+    background-color: #f9f9f9;
+}
+
+/* Dark Theme */
+body.dark-theme .courses .section_title,
+body.dark-theme .courses .section_subtitle {
+    color: #f0f0f0;
+}
+
+body.dark-theme .course_card {
+    background-color: #2b2b2b;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-theme .course_card:hover {
+    background-color: #3a3a3a;
+}
+
+body.dark-theme .footer_link {
+    color: #a8a8a8;
+}
+
+/* Default Light Theme */
+.courses .section_title,
+.courses .section_subtitle,
+.course_card .course_title,
+.course_card .course_description,
+.course_card .course_fee,
+.download_links .footer_link {
+    color: #000; /* Black text for light mode */
+}
+.courses {
+  background-color: #fff; /* White background for light mode */
+  color: #000; /* Black text for light mode */
+  transition: all 0.3s ease;
+}
+/* Dark Theme */
+body.dark-theme .courses .section_title,
+body.dark-theme .courses .section_subtitle,
+body.dark-theme .course_card .course_title,
+body.dark-theme .course_card .course_description,
+body.dark-theme .course_card .course_fee,
+body.dark-theme .download_links .footer_link {
+    color: #fff; /* White text for dark mode */
+}
+
+
+body.dark-theme .courses {
+  background-color: #1e1e1e; /* Dark gray background for the courses section */
+  color: #fff; /* White text for dark mode */
+}
