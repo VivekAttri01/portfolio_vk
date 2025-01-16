@@ -202,3 +202,35 @@ var typed = new Typed(".type", {
   backSpeed: 60,
   loop: true,
 });
+
+
+document.querySelectorAll('.enroll-btn').forEach(button => {
+  button.addEventListener('click', function () {
+    const course = this.dataset.course;
+    const price = this.dataset.price;
+    const servicePeriod = this.dataset.period;
+
+    const options = {
+      key: "rzp_test_ZjsvK6CI6420q5", 
+      amount: price * 100, // Amount in paise
+      currency: "INR",
+      name: "Course Enrollment",
+      description: `${servicePeriod}-month service plan for ${course}`,
+      handler: function (response) {
+        alert(`Payment Successful for ${course}! Transaction ID: ${response.razorpay_payment_id}`);
+        // You can save payment details here using an API
+      },
+      prefill: {
+        name: "John Doe", // Replace with dynamic user data
+        email: "john@example.com",
+        contact: "9876543210",
+      },
+      theme: {
+        color: "#1a73e8",
+      },
+    };
+
+    const razorpay = new Razorpay(options);
+    razorpay.open();
+  });
+});
